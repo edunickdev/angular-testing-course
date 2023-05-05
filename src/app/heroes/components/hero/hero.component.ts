@@ -1,4 +1,4 @@
-import { name } from './../../../../node_modules/@leichtgewicht/ip-codec/types/index.d';
+import { name } from '@leichtgewicht/ip-codec/types';
 import { Component } from '@angular/core';
 
 @Component({
