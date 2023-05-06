@@ -6,6 +6,10 @@
       let isFirst = first;
       let isLast = last;
     "
-    class="list-group-item">{{ i }} - {{ char.name }} - nivel de poder: {{ char.power }} - {{isFirst}} - {{isLast}}
+    class="list-group-item"
+    [ngClass]="{
+      'list-group-item-info': isFirst,
+      'list-group-item-success': isLast,
+    }">{{ i }} - {{ char.name }} - nivel de poder: {{ char.power }} - {{isFirst}} - {{isLast}}
   </li>
 </ul>
